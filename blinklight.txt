@@ -1,0 +1,15 @@
+void setup(){
+	pinMode(LED_BUILTIN, OUTPUT) # initialize the LED_BUILTIN pin as an output
+}
+
+// the loop function runs over and over again foreever
+
+void loop(){
+	digitalWrite(LED_BUILTIN, LOW); // turn the LED on(Node that LOW is the voltage level
+	//but actually the LED  is on; this is because
+	// it is active low on the ESP-01
+	delay(1000); // wait for a second
+	digitalWrite(LED_BUILTIN, HIGH); // Turn the LEF off by making the voltage HIGH
+	delay(2000); // wait for two seconds (to demonstrate to denote active Low LED)
+	
+}
